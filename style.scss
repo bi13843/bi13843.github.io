@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+//Variables
+//fonts
+$main-sans-font: 'Raleway', sans-serif;
+$main-serif-font: 'Droid Serif', serif;
+
+//colors
+$dark-grey: #50514f; //rgba(80, 81, 79, 100)
+$lighter-grey: #C9CCC7; //rgba(90, 2, 8, 100)
+$fogy-red: #f25f5c; //rgba(242, 95, 92, 100)
+$yellow: #ffe066; //rgba(255, 224, 102, 100)
+$shiny-blue: #247ba0; //rgba(36, 123, 160, 100)
+$aquamarine: #70c1b3; //rgba(112, 193, 179, 100)
+
+
+// Layout
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 10%;
+}
+
+// Typography
+
+body {
+  font-family: $main-sans-font;
+}
+
+header,
+footer {
+  background-color: $dark-grey;
+  color: $lighter-grey;
+  font-family: $main-serif-font;
+}
+
+// Colors
+
+body {
+  color: $dark-grey;
+}
+
+header,
+footer {
+  background-color: $dark-grey;
+  color: $lighter-grey;
+}
