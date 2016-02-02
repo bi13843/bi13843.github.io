@@ -1,23 +1,67 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  width: 100%;
+}
+
 body {
-  margin: 0 10%;
+  width: 100%;
+  line-height: 1.648em;
+}
+
+header,
+footer,
+section {
+  width: 100%;
+  padding: 4.47581em 10%;
+}
+
+nav {
+  background-color: #f25f5c;
+  color: #C9CCC7;
+  width: 100%;
+  padding: 0 10%;
+}
+
+nav a {
+  color: #50514f;
+  display: inline-block;
+  line-height: 100%;
+  padding: 1.648em 1em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ffe066;
+  background-color: #50514f;
 }
 
 body {
   font-family: "Raleway", sans-serif;
+  font-size: 1em;
+}
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+  color: #f25f5c;
+  margin: 1em 0 1.648em;
 }
 
 header,
 footer {
   background-color: #50514f;
   color: #C9CCC7;
-  font-family: "Droid Serif", serif;
+  font-family: "Playfair Display", serif;
+}
+
+header h1,
+footer h1 {
+  font-size: 2.7159em;
 }
 
 body {
@@ -27,5 +71,5 @@ body {
 header,
 footer {
   background-color: #50514f;
-  color: #C9CCC7;
+  color: #ffe066;
 }

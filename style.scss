@@ -1,15 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
+//Constants
+$phi: 1.648;
+$module: 1em;
 //Variables
 //fonts
 $main-sans-font: 'Raleway', sans-serif;
-$main-serif-font: 'Droid Serif', serif;
+$main-serif-font: 'Playfair Display', serif;
 
 //colors
 $dark-grey: #50514f; //rgba(80, 81, 79, 100)
 $lighter-grey: #C9CCC7; //rgba(90, 2, 8, 100)
-$fogy-red: #f25f5c; //rgba(242, 95, 92, 100)
+$foggy-red: #f25f5c; //rgba(242, 95, 92, 100)
 $yellow: #ffe066; //rgba(255, 224, 102, 100)
 $shiny-blue: #247ba0; //rgba(36, 123, 160, 100)
 $aquamarine: #70c1b3; //rgba(112, 193, 179, 100)
@@ -18,18 +21,61 @@ $aquamarine: #70c1b3; //rgba(112, 193, 179, 100)
 // Layout
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html { width: 100%; }
+
 body {
-  margin: 0 10%;
+  width: 100%;
+  line-height: $phi * $module;
 }
+
+header,
+footer,
+section {
+  width: 100%;
+  padding: $phi * $phi * $phi * $module 10%;
+}
+
+nav {
+  background-color: $foggy-red;
+  color: $lighter-grey;
+  width: 100%;
+  padding: 0 10%;
+  a {
+    color: $dark-grey;
+    display: inline-block;
+    line-height: 100%;
+    padding: $phi * $module $module;
+    text-decoration: none;
+
+    // &:first-child {
+    //   padding: $phi * $module 5px $phi * $module 0;
+    // }
+
+    &:hover {
+      color: $yellow;
+      background-color: $dark-grey;
+    }
+  }
+}
+
 
 // Typography
 
 body {
   font-family: $main-sans-font;
+  font-size: $module;
+}
+
+section {
+  h1, h2, h3, h4, h5, h6 {
+    color: $foggy-red;
+    margin: $module 0 $phi * $module;
+  }
 }
 
 header,
@@ -37,6 +83,9 @@ footer {
   background-color: $dark-grey;
   color: $lighter-grey;
   font-family: $main-serif-font;
+  h1 {
+    font-size: $phi * $phi * $module;
+  }
 }
 
 // Colors
@@ -48,5 +97,5 @@ body {
 header,
 footer {
   background-color: $dark-grey;
-  color: $lighter-grey;
+  color: $yellow;
 }
